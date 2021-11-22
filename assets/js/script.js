@@ -172,7 +172,7 @@ function renderCities() {
                     var TemperatureToNum = parseInt((pTemperatureK)* 9/5 - 459);
                     var pTemperature = $("<p>").text("Temperature: "+ TemperatureToNum + " °F");
                     var pHumidity = $("<p>").text("Humidity: "+ response5day.list[i].main.humidity + " %");
-                    var pWindSpeed = $("<p>").text("Wind Speed: "+ response.wind.speed + " MPH")
+                    var pWindSpeed = $("<p>").text("Wind Speed: "+ response5day.list[i].wind.speed + " MPH")
                     FivedayDiv.append(Fivedayh4);
                     FivedayDiv.append(imgtag);
                     FivedayDiv.append(pTemperature);
